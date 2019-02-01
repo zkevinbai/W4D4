@@ -18,13 +18,12 @@
      font-family: 'Courier New', Courier, monospace
  }
 
-div {
+.body {
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
+    flex-direction: center;
+    justify-content: space-around;
     align-items: center;
     background-color: aqua;
-    border: 50px;
     border-radius: 50px;
 }
 
@@ -33,7 +32,6 @@ div {
     flex: left; 
     flex-direction: row;
     background-color: lightgreen;
-    border: 50px;
     border-radius: 50px;
 }
 
@@ -42,6 +40,40 @@ div {
     flex: left; 
     flex-direction: row;
     background-color: lightsalmon;
-    border: 50px;
     border-radius: 50px;
+}
+
+.lineup {
+    display: flex;
+    flex-direction: center;
+    justify-content: space-around;
+    background-color: aquamarine;
+    border-radius: 50px;
+}
+
+.bands {
+    display: flex;
+    flex-direction: center;
+    justify-content: space-around;
+    background-color: lightyellow;
+    border-radius: 50px;
+    font-size: larger
+}
+
+.newband {
+    display: flex;
+    flex-direction: center;
+    justify-content: space-around;
+    background-color: lightsalmon;
+    border-radius: 50px;
+    font-size: x-large
+}
+
+.removeband {
+    display: flex;
+    flex-direction: center;
+    justify-content: space-around;
+    background-color: lightcoral;
+    border-radius: 50px;
+    font-size: xx-large
 }

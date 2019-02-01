@@ -5,6 +5,9 @@ Rails.application.routes.draw do
 
   resource :session, only: [:new, :create, :destroy]
 
-  resources :bands
+  resources :bands, except: [:destroy]
+
+  delete 'bands', to: 'bands#destroy', as: :bands_destroy
+
 end
 

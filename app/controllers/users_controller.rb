@@ -11,7 +11,7 @@ class UsersController < ApplicationController
 
         if user.save
             log_in_user!(user)
-            redirect_to user_url(user)
+            redirect_to bands_url
         else
             flash[:error] = "Password must be 3 characters or longer"
             redirect_to new_user_url
@@ -22,7 +22,11 @@ class UsersController < ApplicationController
         user = user.find_by(email: user_params[:user][:email])
         user.destroy
     end 
-
+    
+    def show
+        redirect_to bands_url
+    end
+    
     private
 
     def user_params
